@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "84151441494",
+    "firebase_url": "https://fir-sample-f7da9.firebaseio.com",
+    "project_id": "fir-sample-f7da9",
+    "storage_bucket": "fir-sample-f7da9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84151441494:android:d82c7ad580b48a22f903f7",
+        "android_client_info": {
+          "package_name": "jp.co.moapp.firebasesample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84151441494-kktlnuegqg8cq24cvu8b5t1nel49fj0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX2BWu01_LnemDKqNzMnbrOoo90kHX1jE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84151441494-kktlnuegqg8cq24cvu8b5t1nel49fj0e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
