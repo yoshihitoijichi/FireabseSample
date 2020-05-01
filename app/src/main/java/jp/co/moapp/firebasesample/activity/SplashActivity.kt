@@ -1,9 +1,10 @@
-package jp.co.moapp.firebasesample
+package jp.co.moapp.firebasesample.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import jp.co.moapp.firebasesample.R
 
 class SplashActivity : AppCompatActivity() {
 
@@ -14,7 +15,7 @@ class SplashActivity : AppCompatActivity() {
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()
-        }, 2000L)
+        }, 1000L)
     }
 
     override fun onDestroy() {

@@ -1,32 +1,30 @@
-package jp.co.moapp.firebasesample
+package jp.co.moapp.firebasesample.activity
 
-import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Toast
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.ktx.get
 import com.google.firebase.remoteconfig.ktx.remoteConfig
 import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
-import kotlinx.android.synthetic.main.activity_main.*
+import jp.co.moapp.firebasesample.R
+import kotlinx.android.synthetic.main.activity_remote_config.*
 import timber.log.Timber
 
-class MainActivity : AppCompatActivity() {
+class RemoteConfigActivity : AppCompatActivity() {
 
     private lateinit var remoteConfig: FirebaseRemoteConfig
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_remote_config)
 
-//        main_button.setOnClickListener {
-//            Log.d(MainActivity::class.java.simpleName, "FirebaseInAppMessaging.getInstance().triggerEvent(\"test_fiam_event\")")
-//            FirebaseInAppMessagingDisplay.getInstance().onActivityResumed(this) // 表示処理の呼び出し
-//        }
+        setup()
+        fetchWelcome()
+    }
 
-//        FirebaseInAppMessaging.getInstance().setMessagesSuppressed(false)    // 抑制解除
-
+    private fun setup() {
         // firebase-config-ktx により簡潔に書ける
         remoteConfig = Firebase.remoteConfig
 
@@ -42,8 +40,6 @@ class MainActivity : AppCompatActivity() {
         // apply default
         main_first_text.text = remoteConfig[LOADING_PHRASE_CONFIG_KEY].asString()
         main_second_text.text = remoteConfig[LOADING_PHRASE_CONFIG_KEY].asString()
-
-        fetchWelcome()
     }
 
     private fun fetchWelcome() {
