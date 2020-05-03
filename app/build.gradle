@@ -38,16 +38,18 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    // core
     implementation "com.google.firebase:firebase-core:17.4.0"
     // Remote config
     implementation 'com.google.firebase:firebase-config:19.1.4'
     // Remote Config (Kotlin)
     implementation 'com.google.firebase:firebase-config-ktx:19.1.4'
-
     // Analytics.
     implementation 'com.google.firebase:firebase-analytics:17.4.0'
-    // Crashlytics.
+    // Crashlytics
     implementation 'com.google.firebase:firebase-crashlytics:17.0.0'
+    // InAppMessaging
+    implementation 'com.google.firebase:firebase-inappmessaging-display:19.0.6'
 
     // architecture components
     implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"

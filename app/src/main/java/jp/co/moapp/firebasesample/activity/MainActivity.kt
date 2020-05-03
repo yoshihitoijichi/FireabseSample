@@ -20,14 +20,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, CrashlyticsActivity::class.java))
         }
 
-//        main_button.setOnClickListener {
-//            Log.d(MainActivity::class.java.simpleName, "FirebaseInAppMessaging.getInstance().triggerEvent(\"test_fiam_event\")")
-//            FirebaseInAppMessagingDisplay.getInstance().onActivityResumed(this) // 表示処理の呼び出し
-//        }
-
-//        FirebaseInAppMessaging.getInstance().setMessagesSuppressed(false)    // 抑制解除
-
     }
-
-
 }
