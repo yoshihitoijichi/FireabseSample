@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">FirebaseSample</string>
 
-    <string name="admob_app_id">ca-app-pub-1325212110920656~4385131755</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
 </resources>

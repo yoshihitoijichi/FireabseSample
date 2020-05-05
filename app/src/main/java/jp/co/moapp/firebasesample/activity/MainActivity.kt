@@ -20,5 +20,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, CrashlyticsActivity::class.java))
         }
 
+        main_cloud_messaging_button.setOnClickListener {
+            startActivity(Intent(this, CloudMessagingActivity::class.java))
+        }
+
     }
 }

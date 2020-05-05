@@ -50,6 +50,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-crashlytics:17.0.0'
     // InAppMessaging
     implementation 'com.google.firebase:firebase-inappmessaging-display:19.0.6'
+    // Cloud Messaging
+    implementation 'com.google.firebase:firebase-messaging:20.1.6'
 
     // architecture components
     implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
